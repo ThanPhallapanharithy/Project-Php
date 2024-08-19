@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a,
+p,
+li{
+  font-size: 2rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-size: 3rem;
+}
+header {
+  display: flex;
+  flex-direction: row;
+}
+.top-page {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .icon-bel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 5rem;
+}
+.nav-links a {
+  color: rgb(90, 90, 90);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.logo {
+  width: 140px;
+}
+.logo img {
+  width: 100%;
+}
+.nav-lists {
+  transition: transform 0.2s;
+}
+.nav-lists:hover {
+  transform: scale(1.08);
+}
+.nav-lists a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  background-color: rgb(159, 95, 19);
+  border-radius: 60px;
+  transform: scale(0);
+  transition: transform 0.3s;
+  transform-origin: right;
+}
+.nav-links a:hover::after {
+  transform-origin: left;
+  transform: scale(1.05);
+}
+.active a {
+  color: rgb(159, 95, 19);
+}
+
+/* @keyframes spin {
+    0%{
+        transform: rotate(0deg) ;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+.container-login {
+  display: flex;
+  gap: 4rem;
+}
+.icon-bel i {
+  font-size: 3.5rem;
+}
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  background-color: rgb(159, 95, 19);
+  border-radius: 50%;
+}
+.log-btn {
+  padding: 0.5rem 3rem;
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+.log-btn p {
+  padding: 0.3rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.user i {
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.btn-outline-user {
+  border-color: rgb(159, 95, 19);
+}
+.btn-outline-user:hover {
+  border-color: #9f5f13;
+}
+.btn-colorshop {
+  padding: 1rem 1.5rem;
+  background-color: rgb(159, 95, 19);
+  border-radius: 15px;
+}
+.btn-colorshop:hover {
+  padding: 1rem 1.5rem;
+  background-color: rgb(126, 76, 14);
+}
+.btn-order {
+  padding: 2rem 6.5rem;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: black;
+  transition: all 0.8s;
+}
+.btn-order:hover {
+  color: white;
+  background-color: rgb(74, 74, 74);
+}
+.shopping i {
+   padding: 0.5rem;
+  font-size: 2rem;
+  color: white;
+}
+.navbar-toggler {
+  padding: 0;
+}
+.navbar-toggler {
+  padding: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+@media screen and (max-width: 1920px) {
+  .nav-links .hide {
+    display: none;
+  }
+}
+.quotes h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.img-coffee {
+  max-width: 700px;
+}
+.img-coffee img {
+  width: 100%;
+}
+.img-coffee {
+  position: relative;
+  border-radius: 50%;
+  animation: flyAnimation 5s linear infinite;
+}
+@keyframes flyAnimation {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .quotes h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+  }
+  .logo {
+    display: none;
+  }
+  .icon-bel .container-login {
+    position: fixed;
+  }
+}
+hr {
+  width: 429px;
+  height: 2px;
+  top: 674px;
+  left: 435px;
+  margin: 0 auto;
+}
+.drink-card {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+  transition: transform 0.2s;
+}
+.drink-card:hover {
+  transform: scale(1.03);
+}
+.drink-img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.drink-img img {
+  width: 100%;
+}
+.drink-heading {
+  font-weight: bold;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.btn-container h2 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+.btn-container a {
+  display: flex;
+  justify-content: space-between;
+}
+.btns {
+  white-space: nowrap;
+  padding: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgb(159, 95, 19);
+  border-radius: 10px;
+}
+.btn-order1 {
+  background-color: rgb(159, 95, 19);
+  color: white;
+  gap: 2rem;
+}
+.btn-order1:hover {
+  background-color: rgb(124, 73, 10);
+  color: white;
+}
+.btn-seeall {
+  display: flex;
+  justify-content: center;
+}
+.btn-product {
+  padding: 2rem 16rem;
+  font-size: 2rem;
+  background-color: gray;
+  border-radius: 10px;
+  color: white;
+  white-space: nowrap;
+}
+/* footer */
+.footer {
+  margin: 10rem 10rem 5rem 10rem;
+}
+.icons {
+  display: flex;
+  font-size: 3.5rem;
+  padding: 0 2.1rem;
+}
+.icons div a span {
+  font-size: 3.5rem;
+  padding: 0 2.1rem;
+}
+.social-media {
+    transition: transform 0.2s;
+}
+.social-media:hover{
+    transform: scale(1.3);
+}
+.grid-1x4 {
+  display: grid;
+  padding: 4rem 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 992px) {
+  .grid-1x3 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid-1x3 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem;
+  }
+  .btn-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .line {
+    display: none;
+  }
+}
+.hr {
+  margin: 10rem;
+}
+.container-info {
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  border-right: 2px solid black;
+}
+.copy-right {
+  padding: 0 2rem;
+  color: rgb(167, 167, 167);
+}

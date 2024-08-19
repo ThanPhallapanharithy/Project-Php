@@ -1,0 +1,25 @@
+.containers{
+    margin-top: 8rem;
+}
+.containers h1{
+    font-size: 5rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-btn a{
+    padding: 2rem 6rem;
+    outline: none;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #9f5f13;
+    color: #9f5f13;
+}
+.container a:hover{
+    background-color: #9f5f13;
+}
+.btn:hover{
+    border-color: white;
+}
